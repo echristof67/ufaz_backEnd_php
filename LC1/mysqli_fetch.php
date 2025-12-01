@@ -28,7 +28,11 @@ echo "Exception Msg: " . $e->getMessage();
 <body>
 <p>Number of rows from the resultset : <?php echo $nbRows; ?></p>
 <?php
-
+while($var=mysqli_fetch_assoc($result)){
+//var_dump($var);
+extract($var);
+echo "$artist : ".$var["title"]."<br>";
+}//end while
 
 
 

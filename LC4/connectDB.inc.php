@@ -5,7 +5,7 @@ session_start();
 $host="localhost";
 $user="root";
 $passwd="";
-$db="ufaz_php_2024_6";
+$db="ufaz_php_2025_4";
 
 //try ... catch ...
 //https://www.php.net/manual/fr/class.mysqli.php

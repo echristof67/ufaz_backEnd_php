@@ -1,9 +1,11 @@
 <?php
 //sessions
-
+session_start();
+session_destroy();
+session_start();
 
 //$_SESSION superglobale variable
-
+$_SESSION['country']=array();
 
 
 include("connectDB.inc.php");
@@ -23,7 +25,7 @@ $query="SELECT country FROM catalog GROUP BY country";
 $result=mysqli_query($link,$query);
 
 while($var=mysqli_fetch_assoc($result)){
-//setting $_SESSION
+$_SESSION['country'][$var['country']]=$var['country'];
 
  echo "<a href=\"URLcountryVariableSession1.php?country=".$var['country']."\">".$var['country']."</a><br>";
 }//end while

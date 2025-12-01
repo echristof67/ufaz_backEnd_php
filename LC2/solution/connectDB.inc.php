@@ -2,7 +2,7 @@
 $host="localhost:3306";//or default 3308 for MyMariaDB, 3306 default value, check PHP MyAdmin
 $user="root";
 $passwd="";
-$db="";//set BD name
+$db="ufaz_php_2025_1";//set BD name
 
 
 //PHP version 8

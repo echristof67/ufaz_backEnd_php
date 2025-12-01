@@ -4,7 +4,7 @@ session_destroy();
 session_start();
 
 //$_SESSION superglobale variable
-
+$_SESSION['code']=array();
 
 include("connectDB.inc.php");
 include("securedData.inc.php");
@@ -25,10 +25,10 @@ $result=mysqli_query($link,$query);
 
 while($var=mysqli_fetch_assoc($result)){
 //setting random_pw() code
-$theCode="";
+$theCode=random_pw(8);
 
 //setting $_SESSION with the code
-
+$_SESSION['code'][$theCode]=$var['country'];
 echo "<a href=\"URLcountryVariableSessionCode1.php?code=$theCode\">".$var['country']."</a><br>";
 }//end while
 

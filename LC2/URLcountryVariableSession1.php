@@ -2,17 +2,20 @@
 session_start();
 
 //var_dump for debug
+var_dump($_SESSION['country']);
 
 include("connectDB.inc.php");
 include("securedData.inc.php");
-/*
-if() {
 
+if(array_key_exists('country',$_GET) and array_key_exists($_GET['country'],$_SESSION['country'])) {
+//$country=$_SESSION['country'][$_GET['country']];
+$country=$_GET['country'];
 
 } else {
+	echo "Stop error!";
 	exit();
 }
-*/
+
 //$query="SELECT * FROM catalog WHERE country=\"$country\"";
 //echo $query."<br>";
 //SQL injection
