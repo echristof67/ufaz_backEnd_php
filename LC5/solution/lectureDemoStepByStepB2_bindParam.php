@@ -2,7 +2,7 @@
 
 define('PARAM_HOST','localhost');
 const PARAM_PORT=3306;
-const PARAM_DB_NAME='ufaz_php_2024_7';
+const PARAM_DB_NAME='ufaz_php_2025_5';
 $dsn="mysql:host=".PARAM_HOST.";port=".PARAM_PORT.";dbname=".PARAM_DB_NAME;
 const PARAM_USER='root';
 const PARAM_PASSWD='';

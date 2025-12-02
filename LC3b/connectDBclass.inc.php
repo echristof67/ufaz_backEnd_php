@@ -1,8 +1,8 @@
 <?php
-$host='localhost:3308';//or default 3306
+$host='localhost:3306';//or default 3306
 $user='root';
 $passwd='';
-$db='';
+$db='ufaz_php_2025_1';
 
 //mysqli class https://www.php.net/manual/en/class.mysqli.php
 
@@ -10,7 +10,7 @@ $db='';
 //instance mysqli() class => $mysqliObject object
 //https://www.php.net/manual/en/mysqli.construct.php
 
-
+//$mysqliObject=new mysqli($host,$user,$passwd,$db);
 
 //var_dump($mysqliObject);
 
@@ -37,15 +37,15 @@ if(){
 
 //PHP version 8
 //try ... catch... localhost
-/*
+
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);//N7
 try {
-
-
+$mysqliObject=new mysqli($host,$user,$passwd,$db);
+$mysqliObject->set_charset("utf8");
 } catch (Exception $e) { 
 echo "Case localhost, database : $bd, Error Code: " . $e->getCode() . "<br />";
 echo "Exception Msg: " . $e->getMessage();
 exit();
 }
-*/
+
 ?>

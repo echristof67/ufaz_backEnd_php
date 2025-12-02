@@ -6,8 +6,8 @@ echo "<pre>";
 print_r($_POST);
 print_r($_SESSION);
 echo "</pre>";
+exit();
 */
-
 //check if code exists form input type hidden, use $_POST, and $_SESSION exists?
 if(array_key_exists('code',$_POST) and array_key_exists($_POST['code'],$_SESSION['code'])){
 	$idMovie=intval($_SESSION['code'][$_POST['code']]);	

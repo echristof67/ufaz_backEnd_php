@@ -7,7 +7,7 @@
 //Data Source Name : host, port, database name
 define('PARAM_HOST', 'localhost');
 const PARAM_PORT=3306;
-const PARAM_DB_NAME="";//your DB name
+const PARAM_DB_NAME="ufaz_php_2025_5";//your DB name
 
 
 //dsn value => driver:infos
@@ -32,6 +32,7 @@ const PARAM_PASSWD="";
 
 //setting encoding characters
 //https://www.php.net/manual/en/pdo.exec.php
+
 //$pdo->exec("SET NAMES 'utf8'");
 
 

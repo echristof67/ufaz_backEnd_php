@@ -45,6 +45,8 @@ echo "Direct reading of a public attribute ".$employees[0]->lastname."<br>";
 //Throwable vs Exception : Catch all types of exceptions and fatal errors
  
 echo "<hr>";
+//echo "Direct reading of a private attribute ".$employees[0]->firstname."<br>";
+
 try {
 echo "Direct reading of a private attribute ".$employees[0]->firstname."<br>";
 } catch (Throwable  $e){
